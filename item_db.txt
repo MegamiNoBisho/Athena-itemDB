@@ -2585,7 +2585,7 @@
 4306,Toad_Card,Toad Card,6,20,,10,,,,,,,,4,,,,,{ bonus bFlee2,1; },{},{}
 4307,Kind_Of_Beetle_Card,Beetle King Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bSPGainRace,RC_Fish,5; },{},{ heal 0,-5; }
 4308,Tri_Joint_Card,Tri Joint Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bSPGainRace,RC_Formless,5; },{},{ heal 0,-5; }
-4309,Parasite_Card,Parasite Card,6,20,,10,,,,,,,,32,,,,,{ bonus bDef,1; bonus2 bSubEle,Ele_Neutral,5; },{},{}
+4309,Parasite_Card,Parasite Card,6,20,,10,,,,,,,,32,,,,,{ bonus bDef,1; bonus2 bSubRace,RC_Formless,5; },{},{}
 4310,Panzer_Goblin_Card,Panzer Goblin Card,6,20,,10,,,,,,,,2,,,,,{ bonus bCritAtkRate,10; bonus2 bCriticalAddRace,RC_Demon,7; },{},{}
 4311,Permeter_Card,Permeter Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bSubEle,Ele_Dark,15; bonus2 bSubEle,Ele_Undead,15; },{},{}
 4312,Fur_Seal_Card,Seal Card,6,20,,10,,,,,,,,2,,,,,{ bonus bFlee,3; bonus bHit,10; if(BaseClass==Job_Acolyte) { bonus2 bCriticalAddRace,RC_Undead,9; bonus2 bCriticalAddRace,RC_Demon,9; } },{},{}
@@ -13115,7 +13115,7 @@
 20749,Cloak_Of_Casualties_,Cloak Of Casualties,4,10,,600,,30,,1,0xFFFFFFFF,63,2,4,,170,1,,{ .@r = getrefine(); bonus bMaxHPrate,.@r/2; bonus bMaxSPrate,.@r/2; bonus bAgi,5; bonus bFlee,10; if(readparam(bStr)>=90) bonus bBaseAtk,10+(.@r*2); if(readparam(bInt)>=90) bonus bMatk,20+(.@r*3); if(readparam(bVit)>=90) bonus2 bSubEle,Ele_Neutral,3+((.@r>=8)?3:0)+((.@r>=10)?4:0); if(readparam(bAgi)>=90) { bonus bAspdRate,3+(.@r/2); bonus bAspd,((.@r>=10)?1:0); } if(readparam(bDex)>=90) bonus bLongAtkRate,3+(.@r/2); if(readparam(bLuk)>=90) bonus bCriticalRate,5+.@r; },{},{}
 //-20750
 //-20751
-20752,Golden_Wing,Golden Wing,4,0,,100,,15,,1,0xFFFFFFFF,63,2,4,,1,1,5,{ set .@r,getrefine(); if(readparam(bStr)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bStr,.@r; } if(readparam(bAgi)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bAgi,.@r; } if(readparam(bVit)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bVit,.@r; } if(readparam(bInt)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bInt,.@r; } if(readparam(bDex)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bDex,.@r; } if(readparam(bLuk)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bLuk,.@r; bonus2 bExpAddRace,RC_All,10; bonus2 bDropAddRace,RC_All,10; } },{},{}
+20752,Golden_Wing,Golden Wing,4,0,,100,,15,,1,0xFFFFFFFF,63,2,4,,1,1,5,{ set .@r,getrefine(); if(readparam(bStr)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bStr,.@r; } if(readparam(bAgi)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bAgi,.@r; } if(readparam(bVit)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bVit,.@r; } if(readparam(bInt)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bInt,.@r; } if(readparam(bDex)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bDex,.@r; } if(readparam(bLuk)>=90) { bonus bAllStats,1; bonus bMaxHPrate,1; bonus bMaxSPrate,1; bonus bLuk,.@r; } bonus2 bExpAddRace,RC_All,10; bonus2 bDropAddRace,RC_All,10; },{},{}
 20753,Lian_Robe,Lian Robe,4,0,,700,,20,1,1,0xFFFFFFFF,63,2,4,,65,1,,{ bonus2 bSubEle,Ele_Neutral,5; bonus2 bSubRace,RC_Formless,-5; },{},{}
 //-20754
 //-20755
