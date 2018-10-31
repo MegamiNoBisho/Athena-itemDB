@@ -2289,7 +2289,7 @@
 2981,RingOfHero,Warrior's Ring,4,20,,200,,0,,0,0xFFFFFFFF,63,2,136,,160,,,{},{},{}
 //-2982,Earth_ring,
 2983,Greed_Brooch,Greed Brooch,4,20,,100,,,,1,0xFFFFFFFF,63,2,136,,50,,,{ bonus2 bHPLossRate,10,5000; },{},{}
-2984,Glove_Save_Rimnil,Glove Save Rimnil,4,20,,100,,,,1,0xFFFFFFFF,63,2,136,,30,,,{ bonus2 bExpAddRace,RC_All,5; },{},{}
+2984,Glove_Save_Rimnil,Glove Save Rimnil,4,20,,100,,,,1,0xFFFFFFFF,63,2,136,,30,,,{ bonus2 bExpAddRace,RC_All,5; bonus2 bSubRace,RC_All,-5; },{},{}
 2985,Gyges_Ring,Gyges Ring,4,20,,100,,,,1,0xFFFFFFFF,63,2,136,,50,,,{ bonus bInt,3; bonus bMatk,30; bonus bMdef,5; skill "TF_HIDING",1; },{},{ sc_end SC_HIDING; }
 2986,Snake_Ring,Snake Ring,4,20,,100,,2,,1,0xFFFFFFFF,63,2,136,,0,0,0,{ bonus bDex,3; bonus bMdef,2; },{},{}
 2987,Snake_Pendant,Snake Pendant,4,20,,100,,3,,1,0xFFFFFFFF,63,2,136,,0,0,0,{ bonus bAgi,3; bonus bLuk,2; bonus bMdef,3; },{},{}
@@ -7896,38 +7896,38 @@
 // ==============================================================================================================
 // Bullets
 // ==============================================================================================================
-13200,Bullet,Bullet,10,1,,2,10,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
+13200,Bullet,Bullet,10,1,,1,25,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
 13201,Silver_Bullet,Silver Bullet,10,15,,2,15,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
 13202,Shell_Of_Blood,Bloody Shell,10,30,,2,30,,,,0x41000000,63,2,32768,,1,,3,{ bonus2 bAddEff,Eff_Bleeding,100; },{},{}
-13203,Flare_Sphere,Flare Sphere,10,80,,5,50,,,,0x41000000,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
-13204,Lighting_Sphere,Lightning Sphere,10,80,,5,50,,,,0x41000000,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
-13205,Poison_Sphere,Poison Sphere,10,80,,5,50,,,,0x41000000,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
-13206,Blind_Sphere,Blind Sphere,10,80,,5,50,,,,0x41000000,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
-13207,Freezing_Sphere,Freezing Sphere,10,80,,5,50,,,,0x41000000,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Water; },{},{}
+13203,Flare_Sphere,Flare Sphere,10,80,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
+13204,Lighting_Sphere,Lightning Sphere,10,80,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
+13205,Poison_Sphere,Poison Sphere,10,80,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
+13206,Blind_Sphere,Blind Sphere,10,80,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
+13207,Freezing_Sphere,Freezing Sphere,10,80,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Water; },{},{}
 13208,Gong_Bug,Sow Bug,10,0,,5,50,,,,0x41000000,63,2,32768,,50,,3,{ bonus2 bAddEff,Eff_Stun,1000; },{},{}
-13210,Slug_Bullet_1,Slug Ammunition L,10,250,,250,30,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
-13211,Slug_Bullet_2,Slug Ammunition M,10,500,,500,30,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
-13212,Slug_Bullet_3,Slug Ammunition H,10,750,,750,30,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
-13213,Slug_Bullet_4,Slug Ammunition SH,10,1000,,1000,30,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
-13214,Slug_Bullet_5,Slug Ammunition XH,10,1200,,1200,30,,,,0x41000000,63,2,32768,,1,,3,{},{},{}
-13215,AP_Ammo,Armor Burnt,10,10,,2,50,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Neutral; },{},{}
-13216,Blaze_Bullet,Incandescence Shot,10,10,,2,40,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Fire; },{},{}
-13217,Freezing_Bullet,Glaciation Shot,10,10,,2,40,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Water; },{},{}
-13218,Electric_Shock_Bullet,Dengeki Shot,10,10,,2,40,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Wind; },{},{}
-13219,Magical_Stone_Bullet,Hearthstone Shot,10,10,,2,40,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Earth; },{},{}
-13220,Sanctified_Bullet,Purification Shot,10,10,,2,40,,,0,0xFFFFFFFF,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
-13221,Silver_Bullet_,Silver Bullet,10,10,,2,15,,,0,0xFFFFFFFF,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
-13222,Shell_Of_Blood_,Bloody Shell,10,10,,2,30,,,0,0xFFFFFFFF,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Neutral; },{},{}
-13223,Flare_Sphere_,Flare Sphere,10,10,,5,50,,,0,0xFFFFFFFF,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
-13224,Lighting_Sphere_,Lightning Sphere,10,10,,5,50,,,0,0xFFFFFFFF,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
-13225,Poison_Sphere_,Poison Sphere,10,10,,5,50,,,0,0xFFFFFFFF,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Poison; },{},{}
-13226,Blind_Sphere_,Blind Sphere,10,10,,5,50,,,0,0xFFFFFFFF,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Dark; },{},{}
-13227,Freezing_Sphere_,Freezing Sphere,10,10,,5,50,,,0,0xFFFFFFFF,63,2,32768,,1,,5,{ bonus bAtkEle,Ele_Water; },{},{}
+13210,Slug_Bullet_1,Slug Ammunition L,10,250,,250,30,,,,,,,32768,,,,3,{},{},{}
+13211,Slug_Bullet_2,Slug Ammunition M,10,500,,500,30,,,,,,,32768,,,,3,{},{},{}
+13212,Slug_Bullet_3,Slug Ammunition H,10,750,,750,30,,,,,,,32768,,,,3,{},{},{}
+13213,Slug_Bullet_4,Slug Ammunition SH,10,1000,,1000,30,,,,,,,32768,,,,3,{},{},{}
+13214,Slug_Bullet_5,Slug Ammunition XH,10,1200,,1200,30,,,,,,,32768,,,,3,{},{},{}
+13215,AP_Ammo,Armor-Piercing Bullet,10,15,,2,50,,,0,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Neutral; },{},{}
+13216,Blaze_Bullet,Blazing Bullet,10,10,,2,40,,,,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Fire; },{},{}
+13217,Freezing_Bullet,Freezing Bullet,10,10,,2,40,,,,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Water; },{},{}
+13218,Electric_Shock_Bullet,Lightning Bullet,10,10,,2,40,,,,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Wind; },{},{}
+13219,Magical_Stone_Bullet,Magic Stone Bullet,10,10,,2,40,,,,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Earth; },{},{}
+13220,Sanctified_Bullet,Purifying Bullet,10,10,,2,40,,,,0x41000000,63,2,32768,,100,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13221,Silver_Bullet_,Silver Bullet,10,5,,2,15,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13222,Shell_Of_Blood_,Bloody Shell,10,10,,2,30,,,,0x41000000,63,2,32768,,1,,3,{ bonus2 bAddEff,Eff_Bleeding,100; },{},{}
+13223,Flare_Sphere_,Flare Sphere,10,15,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
+13224,Lighting_Sphere_,Lightning Sphere,10,15,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
+13225,Poison_Sphere_,Poison Sphere,10,15,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Poison; },{},{}
+13226,Blind_Sphere_,Blind Sphere,10,15,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Dark; },{},{}
+13227,Freezing_Sphere_,Freezing Sphere,10,15,,5,50,,,,,,,32768,,,,5,{ bonus bAtkEle,Ele_Water; },{},{}
 13228,Flare_Bullet,Flare Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Fire; },{},{}
 13229,Lightning_Bullet,Lightning Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Wind; },{},{}
 13230,Ice_Bullet,Ice Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Water; },{},{}
-13231,Poison_Bullet,Poison Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Poison; },{},{}
-13232,Blind_Bullet,Blind Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Dark; },{},{}
+13231,Poison_Bullet,Poison Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
+13232,Blind_Bullet,Blind Bullet,10,10,,2,20,,,,0x41000000,63,2,32768,,1,,3,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
 
 // ==============================================================================================================
 // Shurikens & Kunais (1)
@@ -14658,12 +14658,12 @@
 24022,S_Magical_Weapon,Magical Weapon (Shadow),12,0,,0,,0,,0,0xFFFFFFFF,63,2,131072,,1,1,0,{ bonus bMatk,10; if(getrefine()>=7) { bonus2 bMagicAddRace,RC_All,1; } },{},{}
 24023,S_Magical_Pendant,Magical Pencil (Shadow),12,0,,0,,0,,0,0xFFFFFFFF,63,2,2097152,,1,1,0,{ bonus bMaxSP,50; if(getrefine()>=7) { bonus bMaxSPrate,1; } },{},{}
 24024,S_Breezy_Armor,Breeze Armor (Shadow),12,0,,0,,,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus bFlee,5+(getrefine()>=7 ? 10 : 0); },{},{}
-24025,S_Champion_Shoes,Champion Shoes (Shadow),12,0,,0,,0,,0,0xFFFFFFFF,63,2,524288,,1,1,0,{ bonus bMaxHP,20; bonus bMaxSP,20; if(getrefine()>=7) { bonus bMaxHP,1; bonus bMaxSP,1; } },{},{}
+24025,S_Champion_Shoes,Champion Shoes (Shadow),12,0,,0,,0,,0,0xFFFFFFFF,63,2,524288,,1,1,0,{ bonus bMaxHP,20; bonus bMaxSP,10; if(getrefine()>=7) { bonus bMaxHPrate,1; bonus bMaxSPrate,1; } },{},{}
 24026,S_Athena_Shield,Athena Shield (Shadow),12,0,,0,,0,,0,0xFFFFFFFF,63,2,262144,,1,1,0,{ bonus bDef,(getrefine()>=7)?20:10; },{},{}
 24027,S_Immune_Armor,Immune Shadow Armor,12,0,,0,,0,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus2 bSubEle,0,1; },{},{}
 24028,S_Hard_Armor,Hard Shadow Armor,12,0,,0,,0,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus bMaxHP,50; if(getrefine()>=7) { bonus bMaxHPrate,1; } },{},{}
 24029,S_Ancient_Armor,Ancient Shadow Armor,12,0,,0,,0,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus bHit,(getrefine()>=7)?20:10; },{},{}
-24030,S_Critical_Armor,Critital Shadow Armor,12,0,,0,,0,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus bCritical,(getrefine()>=7)?10:5; },{},{}
+24030,S_Critical_Armor,Critical Shadow Armor,12,0,,0,,0,,0,0xFFFFFFFF,63,2,65536,,1,1,0,{ bonus bCritical,(getrefine()>=7)?10:5; },{},{}
 24031,S_Kingbird_Weapon,Kingbird's Shadow Weapon,12,0,,0,,0,,0,0xFFFFFFFF,63,2,131072,,1,1,0,{ bonus bBaseAtk,10; if(getrefine()>=7) { bonus bLongAtkRate,1; } },{},{}
 24032,S_Cri_Hit_Weapon,Critical Hit Shadow Weapon,12,0,,0,,0,,0,0xFFFFFFFF,63,2,131072,,1,1,0,{ bonus bBaseAtk,10; if(getrefine()>=7) { bonus bCritAtkRate,1; } },{},{}
 24033,S_Healing_Weapon,Healing Shadow Weapon,12,0,,0,0:10,,,0,0xFFFFFFFF,63,2,131072,,1,1,,{ if (getrefine()>=7) bonus bHealPower2,5; },{},{}
@@ -14714,9 +14714,9 @@
 24078,S_Spiritual_Weapon,Spiritual Shadow Weapon,12,0,,0,,,,,0xFFFFFFFF,63,2,131072,,1,1,0,{ bonus bUseSPrate,-5; if(getrefine()>=7) { bonus bSPrecovRate,5; } },{},{}
 24079,S_Spiritual_Earring,Spiritual Shadow Earring,12,0,,0,,,,,0xFFFFFFFF,63,2,1048576,,1,1,,{ bonus bMaxSP,50; },{},{}
 24080,S_Spiritual_Pendent,Spiritual Shadow Pendant,12,0,,0,,,,,0xFFFFFFFF,63,2,2097152,,1,1,,{ bonus bMaxSPrate,(getrefine()>=7?2:1); },{},{}
-24081,S_Malicious_Armor,Malicious Shas Shadow Armor,12,0,,0,,,,,0xFFFFFFFF,63,2,65536,,1,1,,{ bonus bMaxHP,100; if(getrefine()>=7) { bonus bMaxHPrate,1; } },{},{}
-24082,S_Malicious_Shoes,Malicious Shas Shadow Shoes,12,0,,0,,,,,0xFFFFFFFF,63,2,524288,,1,1,,{ bonus bMaxHPrate,(getrefine()>=7?2:1); },{},{}
-24083,S_Malicious_Shield,Malicious Shas Shadow Shield,12,0,,0,,,,,0xFFFFFFFF,63,2,262144,,1,1,,{ bonus bHPrecovRate,(getrefine()>=7?10:5); },{},{}
+24081,S_Malicious_Armor,Malicious Shadow Armor,12,0,,0,,,,,0xFFFFFFFF,63,2,65536,,1,1,,{ bonus bMaxHP,100; if(getrefine()>=7) { bonus bMaxHPrate,1; } },{},{}
+24082,S_Malicious_Shoes,Malicious Shadow Shoes,12,0,,0,,,,,0xFFFFFFFF,63,2,524288,,1,1,,{ bonus bMaxHPrate,(getrefine()>=7?2:1); },{},{}
+24083,S_Malicious_Shield,Malicious Shadow Shield,12,0,,0,,,,,0xFFFFFFFF,63,2,262144,,1,1,,{ bonus bHPrecovRate,(getrefine()>=7?10:5); },{},{}
 24084,S_Gemstone_Armor,Gemstone Shadow Armor,12,0,,0,,,,0,0xFFFFFFFF,63,2,65536,,1,1,,{ bonus bCritical,5+(getrefine()/2); },{},{}
 24085,S_Gemstone_Shoes,Gemstone Shadow Shoes,12,0,,0,,,,0,0xFFFFFFFF,63,2,524288,,1,1,,{ bonus bFlee,5+(getrefine()/2); },{},{}
 24086,S_Gemstone_Shield,Gemstone Shadow Shield,12,0,,0,,,,0,0xFFFFFFFF,63,2,262144,,1,1,,{ bonus bDef,5+(getrefine()/2); },{},{}
@@ -17454,10 +17454,10 @@
 31555,C_31555,Costume 31555,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,660,{},{},{}
 31556,C_31556,Costume 31556,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,268,{},{},{}
 31559,C_Royalguard_Necklace,Costume Royal Guard Necklace,4,0,,0,,0,,0,0xFFFFFFFF,63,2,4096,,1,0,1629,{},{},{}
-31560,C_31560,Costume 31560,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1359,{},{},{}
-31561,C_31561,Costume 31561,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1008,{},{},{}
-31562,C_31562,Costume 31562,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1376,{},{},{}
-31563,C_31563,Costume 31563,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1020,{},{},{}
+31560,C_DVAngelNurseCap,Costume Nurse Cap of Clergy,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1359,{},{},{}
+31561,C_Eight_Purgatory_Wings,Costume Eight Purgatory Wings,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1008,{},{},{}
+31562,C_Stahl_von_Kaiser_XVI,Costume Stahl von Kaiser XVI,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1376,{},{},{}
+31563,C_Blue_Eyes_Makeup,Costume Blue Eyes Makeup,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1020,{},{},{}
 31564,C_Variant_Veil,Costume Variant Veil,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1785,{},{},{}
 31565,C_Princess_Ribbon_Crown,Costume Princess Ribbon Crown,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1786,{},{},{}
 31566,C_Stall_Of_Dominions,Costume Stall Of Dominions,4,0,,0,,0,,0,0xFFFFFFFF,63,2,4096,,1,0,1784,{},{},{}
@@ -17473,9 +17473,9 @@
 31577,C_Roast_Memory_J,Costume Roast Memory,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1576,{},{},{}
 31578,C_Alchemist_Mask_J,Costume Alchemist Mask,4,0,,0,,0,,0,0xFFFFFFFF,63,2,6144,,1,0,1497,{},{},{}
 31579,C_Lovegame_Hat,Costume I LOVE GAMES,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1306,{},{},{}
-31580,C_31580,Costume 31580,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1792,{},{},{}
+31580,C_Autumnal_Flavor,Costume Autumnal Flavor,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1792,{},{},{}
 31589,C_GOLD_MAJESTIC_GOUT,Costume Golden Majestic Goat,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1800,{},{},{}
-31606,C_31606,Costume 31606,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1119,{},{},{}
+31606,C_Autumn_Headband,Costume Autumn Headband,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1119,{},{},{}
 
 // ==============================================================================================================
 // 1-Handed Spears (2)
@@ -17527,7 +17527,7 @@
 32231,Schmidt_Insignia_Rigid_Body,King Schmidt's Rigid Body Insignia,4,0,,200,,10,,1,0xFFFFFFFF,63,2,128,,150,,,{ bonus bMaxHPrate,10; },{},{}
 32232,Schmidt_Insignia_Flare,King Schmidt's Flare Insignia,4,0,,200,,10,,1,0xFFFFFFFF,63,2,128,,150,,,{ bonus bAspdRate,5; },{},{}
 32233,Schmidt_Insignia_Celestial,King Schmidt's Celestial Insignia,4,0,,200,,10,,1,0xFFFFFFFF,63,2,128,,150,,,{ bonus bLongAtkRate,7; },{},{}
-32237,Celine's_Brooch,Celine's Brooch,4,10,,500,,0,,1,0xFFFFFFFE,63,2,136,,100,0,0,{ bonus bMatkRate,5; bonus bVariableCastrate,-10; },{},{}
+32237,Celine_Brooch,Celine's Brooch,4,10,,500,,0,,1,0xFFFFFFFE,63,2,136,,100,0,0,{ bonus bMatkRate,5; bonus bVariableCastrate,-10; },{},{}
 
 // ==============================================================================================================
 // Guns (3)
