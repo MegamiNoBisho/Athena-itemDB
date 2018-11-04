@@ -16012,7 +16012,7 @@
 28011,Unity_Katar,Unity Katar,5,20,,650,123,,1,1,0x00001000,63,2,34,3,1,1,16,{ bonus bBaseAtk,pow(getrefine(),2)*125/100; },{},{}
 //-28012,Cat_Katar_-_Tuna,
 //-28013,Requiem_Katar,
-//-28014,Ancient_Kings_Twin_Blade,
+28014,Twin_Edge_of_Ancient_King,Twin Edge of Ancient King,5,20,,2800,150,,1,3,0x00001000,56,2,34,4,130,1,16,{ .@r = getrefine(); bonus2 bSkillAtk,"GC_CROSSIMPACT",.@r; bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",.@r; bonus2 bSkillAtk,"GC_ROLLINGCUTTER",.@r; if(.@r>=7) { bonus bAspdRate,5; } if(.@r>=9) { bonus bAspdRate,5; } if(.@r>=10) { bonus bAspdRate,5; bonus bDefRatioAtkClass,Class_All; } },{},{}
 //-28015,Enhanced_Metal_Katar,
 //-28016,Avenger_Bloody_Roar,
 //-28017,Avenger_Jamadhar,
