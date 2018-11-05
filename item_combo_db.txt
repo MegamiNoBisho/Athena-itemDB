@@ -801,6 +801,10 @@
 20838:26109,{ bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",10; .@eq = getequiprefinerycnt(EQI_GARMENT); .@weapon = getequiprefinerycnt(EQI_HAND_R); if (.@eq >= 7 && .@weapon >= 7) { bonus2 bSkillAtk,"SO_EARTHGRAVE",40; } if ((.@eq + .@weapon) >= 18) { bonus2 bMagicAtkEle,Ele_Neutral,10; bonus2 bMagicAtkEle,Ele_Earth,10; if ((.@eq + .@weapon) >= 22) { bonus2 bMagicAtkEle,Ele_Water,10; } } }
 20840:28725,{ .@weapon = getequiprefinerycnt(EQI_HAND_R); .@eq = getequiprefinerycnt(EQI_GARMENT); .@val = 80; if (.@weapon >= 7 && .@eq >= 7) { .@val += 80; } if ((.@weapon + .@eq) >= 18) { .@val += 40; } if ((.@weapon + .@eq) >= 22) { bonus2 bMagicAtkEle,Ele_Fire,15; } bonus bMatk,.@val; }
 20847:28745,{ .@weapon = getequiprefinerycnt(EQI_HAND_R); .@eq = getequiprefinerycnt(EQI_GARMENT); .@val = 10; if (.@weapon >= 7 && .@eq >= 7) { bonus bCritAtkRate,15; } if ((.@weapon + .@eq) >= 18) { .@val += 15; if ((.@weapon + .@eq) >= 22) { skill "TF_DOUBLE",4; bonus bDoubleRate,20; } } bonus bAspdRate,.@val; }
+20933:22196,{ bonus bCritAtkRate,10; }
+20933:22197,{ bonus bVariableCastrate,-10; }
+20934:22196,{ bonus bLongAtkRate,10; }
+20934:22197,{ bonus2 bMagicAtkEle,Ele_All,10; }
 21024:22129,{ set .@i,getskilllv("RK_ENCHANTBLADE"); set .@j,getskilllv("LK_AURABLADE"); bonus2 bSkillAtk,"SM_BASH",(.@i+.@j)*10; bonus2 bSkillAtk,"KN_BOWLINGBASH",(.@i+.@j)*10; }
 21024:22129:28561,{ set .@r,getequiprefinerycnt(EQI_HAND_R); bonus2 bSkillUseSP,"SM_BASH",-5; bonus2 bSkillUseSP,"KN_BOWLINGBASH",-10; bonus2 bSkillAtk,"KN_BOWLINGBASH",(.@r>=9?300:(.@r>=7?100:0)); }
 22105:28388,{ bonus bBaseAtk,50; bonus2 bAddDefMonster,1196,20; bonus2 bAddDefMonster,1197,20; }
