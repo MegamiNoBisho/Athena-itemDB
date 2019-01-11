@@ -945,7 +945,7 @@
 24210:24211,{ bonus2 bExpAddRace,RC_All,((getequiprefinerycnt(EQI_SHADOW_SHOES)+getequiprefinerycnt(EQI_SHADOW_SHIELD))>=15?20:10); }
 24212:24213,{ bonus2 bExpAddRace,RC_All,((getequiprefinerycnt(EQI_SHADOW_SHOES)+getequiprefinerycnt(EQI_SHADOW_SHIELD))>=15?10:5); }
 24214:24215,{ bonus2 bExpAddRace,RC_All,((getequiprefinerycnt(EQI_SHADOW_SHOES)+getequiprefinerycnt(EQI_SHADOW_SHIELD))>=15?4:2); }
-24217:24218,{ if(getequiprefinerycnt(EQI_SHADOW_ACC_R)+getequiprefinerycnt(EQI_SHADOW_ACC_L)>=15) bonus bAspd,1; }
+24217:24218,{ .@r = getequiprefinerycnt(EQI_SHADOW_ACC_R)+getequiprefinerycnt(EQI_SHADOW_ACC_L); bonus bBaseAtk,.@r; if(.@r>=15) bonus bAspd,1; }
 24223:24225:24226,{ .@r = getequiprefinerycnt(EQI_SHADOW_WEAPON)+getequiprefinerycnt(EQI_SHADOW_ACC_R)+getequiprefinerycnt(EQI_SHADOW_ACC_L); if(.@r>=25) { bonus2 bAddClass,Class_All,2; } else if(.@r>=20) { bonus2 bAddClass,Class_All,1; } bonus2 bAddClass,Class_All,1; }
 24224:24225:24226,{ .@r = getequiprefinerycnt(EQI_SHADOW_WEAPON)+getequiprefinerycnt(EQI_SHADOW_ACC_R)+getequiprefinerycnt(EQI_SHADOW_ACC_L); if(.@r>=25) { bonus2 bAddClass,Class_All,2; } else if(.@r>=20) { bonus2 bAddClass,Class_All,1; } bonus bAtk2,10; }
 24227:24229:24230,{ .@r = getequiprefinerycnt(EQI_SHADOW_WEAPON)+getequiprefinerycnt(EQI_SHADOW_ACC_R)+getequiprefinerycnt(EQI_SHADOW_ACC_L); if(.@r>=25) { bonus2 bMagicAddRace,RC_All,2; } else if(.@r>=20) { bonus2 bMagicAddRace,RC_All,1; } bonus2 bMagicAddRace,RC_All,1; }
