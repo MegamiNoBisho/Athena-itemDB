@@ -9537,7 +9537,7 @@
 //-15118,PRO_10th_Armor,
 //-15119,PRO_10th_Robe,
 //-15120,PRO_10th_Shoes,
-15121,Robe_Of_Sarah,Sarah Combat Robe,4,20,,800,,35,,1,0xFFFFFFFF,63,2,16,,145,1,,{ /*TODO: Confirm the real rate and additional MAtk*/ .@r = getrefine(); autobonus "{ bonus bMatk,20; }",100,(10+((.@r) ? .@r*8 : 0))*1000,BF_MAGIC; },{},{}
+15121,Robe_Of_Sarah,Sarah's Battle Robe,4,10,,800,,35,,1,0xFFFFFFFF,63,2,16,,145,1,,{ autobonus "{ bonus bMatk,getrefine()*8; }",3,10000,BF_MAGIC; },{},{}
 //-15122,Botany_Mail,
 15123,Whikebain_Suit,Whikebain Suit,4,0,,900,,56,,1,0x00001000,56,2,16,,105,1,,{ .@r = getrefine(); bonus bCritAtkRate,(.@r>=7)?(6):((.@r>=5)?(4):(0)); bonus3 bAutoSpell,"DC_WINKCHARM",1,10; /* Confirm: Success rate */ },{},{}
 //-15124,Father_Mail,
